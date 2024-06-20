@@ -1,0 +1,14 @@
+<html>
+    <head><title>Find Sentiments</title></head>
+    <body background="../../../media/bg.jpg" style="background-size: 100% 100%;">
+        <center>
+        <img class="hcont" src="../../../media/logo.jpg" height="200px" style="padding:5px;">
+        </br></br><span style="font-size:24px;font-family: cursive;">find sentiment of a sentence</span></br></br>
+        <form action="" method="POST"><input type="hidden" name="csrfmiddlewaretoken" value="{{token}}">
+        <textarea style="padding:10px;font-size: 26px;border:2px solid green;border-radius:30px;font-family: cursive;resize: none;" id="sentence" name="sentence" placeholder="Type something here" rows="2" cols="50">{{ text }}</textarea></br></br>
+        <input style="padding:10px;border:2px solid green;border-radius:30px;font-family: cursive;" type="Submit" value="Check Sentiment">
+        </form>
+        <h1 style="font-size:120px;">{{ value }}</h1>   
+        </center>
+    </body>
+</html>
